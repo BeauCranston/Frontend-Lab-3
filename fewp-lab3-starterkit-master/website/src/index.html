@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Responsive Design</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js" integrity="sha512-qk0XupXlge1h9I63+bC7K8850xgWnUjTgSNkfLnsqc7dWdx4031UbKjKs2cuRxsNXymkSjyzSCiryVouU74zkg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <nav class="nav">
+        <div class="logo"><img src="images/openhouse-logo.svg" width="140" height="auto" alt="OpenHouse logo"></div>
+        <div class="nav-items nav-items-desktop">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./interior.html">About</a></li>
+                <li><a href="./post.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="nav-items nav-items-mobile">
+            
+            <img class='icon grow-on-hover' src="images/menu.svg" width="28" height="20" alt="Menu icon">
+     
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./interior.html">About</a></li>
+                <li><a href="./post.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="cta">
+            <h1>The best place to find a home</h1>
+            <button class="btn-cta" type="button">Get started</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 class="header-mobile">For over such and such years, we’ve been the one that had the results you can count on.</h1>
+        <div class="intro">
+            <div class="photo">
+                <img class="photo-desktop rellax" alt="Super cool photo" data-rellax-speed="2" src="images/intro-image.jpg" width="100%" height="auto">
+                <img class="photo-mobile" alt="Super cool photo" src="images/intro-image.jpg" width="100%" height="auto">
+            </div>
+            <div class="text">
+                <h1 class="header-desktop">For over such and such years, we’ve been the one that had the results you can count on.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet dui ac ex pulvinar fermentum eu auctor ex. Vestibulum at euismod dui. Etiam quis nisi quis est sagittis sollicitudin id in ipsum. Nulla euismod quis ex in egestas. Sed pulvinar cursus metus, in ultricies eros venenatis in. Vestibulum ut quam pulvinar sapien ornare pellentesque. Sed sed sagittis nunc, eget efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce euismod vitae tortor quis facilisis. Aenean vel fringilla massa. Cras faucibus lectus id semper scelerisque.</p>
+                <p>Integer quis elementum libero, sed egestas dui. Phasellus quis mauris dignissim, rhoncus nulla eu, malesuada dui. Praesent eu nulla fermentum, imperdiet turpis sit amet, aliquet enim. Mauris gravida justo quis sem tincidunt, id auctor libero lacinia. </p>
+            </div>
+        </div>
+
+        <div class="features">
+            <h1>Features that keep you coming back</h1>
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="images/feature-1.png" alt="Feature 1">
+                </div>
+                <div class="feature-copy">
+                    Objectively, the best map application for finding your perfect home
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="images/feature-2.png" alt="Feature 2">
+                </div>
+                <div class="feature-copy">
+                    Works on mobile
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="images/feature-3.png" alt="Feature 3">
+                </div>
+                <div class="feature-copy">
+                    Fast like Sonic
+                </div>
+            </div>
+        </div>
+
+        <div class="signup-form">
+            <h1>Now that we’ve clearly convinced you about what we’re doing here, please sign up.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet dui ac ex pulvinar fermentum eu auctor ex. Vestibulum at euismod dui. Etiam quis nisi quis est sagittis sollicitudin id in ipsum. Nulla euismod quis ex in egestas. Sed pulvinar cursus metus, in ultricies eros venenatis in. Vestibulum ut quam pulvinar sapien ornare pellentesque. Sed sed sagittis nunc, eget efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce euismod vitae tortor quis facilisis. Aenean vel fringilla massa. Cras faucibus lectus id semper scelerisque.</p>
+            <p>Integer quis elementum libero, sed egestas dui. Phasellus quis mauris dignissim, rhoncus nulla eu, malesuada dui. Praesent eu nulla fermentum, imperdiet turpis sit amet, aliquet enim. Mauris gravida justo quis sem tincidunt, id auctor libero lacinia. </p>
+
+            <form>
+                <div class="form-item">
+                    <label>Name</label>
+                    <input type="text" name="user-name" id="user-name" placeholder="e.g. Jesse">
+                </div>
+                <div class="form-item">
+                    <label>Email Address</label>
+                    <input type="email" name="user-email" id="user-email" placeholder="e.g. jesse@company.com">
+                </div>
+                <div class="form-item">
+                    <label>Username</label>
+                    <input type="text" name="user-username" id="user-username" placeholder="e.g. jesse">
+                </div>
+                <div class="form-item">
+                    <label>Password</label>
+                    <input type="password" name="user-password" id="user-password">
+                </div>
+                <div class="form-item">
+                    <button type="button">Signup</button>
+                </div>
+                <div class="form-item form-checkbox">
+                    <input type="checkbox" name="user-accept" id="user-accept" checked> I agree that I want you to bother me with this forever, even when it’s clearly no longer relevant (please check it anyway, yolo)
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="address">
+            <img src="images/openhouse-logo.svg" width="140" height="auto" alt="OpenHouse logo">
+            <div>
+                123 Main Street,<br>Hamilton, Ontario<br>L9A 2W6
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+            </nav>
+            <div class="social">
+                <a href="#"><img src="images/instagram.svg" width="24" height="auto" alt="Instagram icon"></a>
+                <a href="#"><img src="images/facebook.svg" width="24" height="auto" alt="Facebook icon"></a>
+                <a href="#"><img src="images/twitter.svg" width="24" height="auto" alt="Twitter icon"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
