@@ -1,0 +1,105 @@
+/* <!-- I BEAU CRANSTON 000397019 AM THE AUTHOR OF THE CODE YOU SEE BELOW. BESIDES THE FACT THAT NICK TOMKIN CREATED THE DESIGN LAYOUT. --> */
+/* THIS CSS FILE IS THE SAME AS STYLES.CSS EXPECT WITH EVERYTHING @MEDIA RELATED STRIPPED OUT BESIDES THE INTRO SECTION */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+button {
+    background: #02A8F9;
+    border-radius: 4px;
+    border: none;
+    padding: 14px 26px;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    outline: none;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.header-desktop {
+    display: block;
+}
+
+/* Content: Mobile */
+@media only screen and (max-width: 768px) {
+    .content {
+        margin: 0 40px;
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+
+    .header-mobile {
+        display: block;
+    }
+
+    .header-desktop {
+        display: none;
+    }
+}
+
+/* Intro */
+
+.intro {
+    display: grid;
+    grid-template-columns: 54% 46%;
+    margin: 40px 0;
+}
+
+.intro .photo img {
+    box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.intro .text {
+    padding-right: 80px;
+}
+
+.intro .photo-mobile {
+    display: none;
+}
+
+.intro .photo-desktop {
+    display: block;
+}
+
+/* Intro: Mobile  */
+@media only screen and (max-width: 768px) {
+    .intro {
+        display: block;
+    }
+
+    .intro .photo img {
+        max-width: fit-content;
+    }
+
+    .intro .photo-mobile {
+        display: block;
+    }
+
+    .intro .photo-desktop {
+        display: none;
+    }
+
+    .intro .text {
+        padding-right: 0;
+    }
+}
+
+
+footer {
+    background: #4D4D4D;
+    padding: 40px;
+    color: #C2C2C2;
+}
+

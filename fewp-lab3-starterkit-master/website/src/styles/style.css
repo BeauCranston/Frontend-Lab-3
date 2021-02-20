@@ -136,7 +136,7 @@ button {
 
 .hero {
     height: 740px;
-    background-image: url(images/hero-image.jpg);
+    background-image: url(../images/hero-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -432,32 +432,3 @@ footer .navigation .social a {
 
 }
 
-
-
-
-
-
-/* .nav .nav-items-mobile {
-    display: none;
-    text-align: right;
-}
-.nav .nav-items-mobile ul {
-    padding: 10px;
-    margin: 0;
-    list-style: none;
-    float: left;
-    font-size: 1.2em;
-}
-/* Nav: Mobile */
-/*
-@media only screen and (max-width: 768px) {
-    .nav .logo {
-        justify-content: left;
-    }
-
-    .nav-items-desktop {
-        display: none;
-    }
-         
-} 
-*/

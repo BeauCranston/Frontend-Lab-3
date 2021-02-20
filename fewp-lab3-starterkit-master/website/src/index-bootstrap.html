@@ -1,0 +1,161 @@
+<!-- I BEAU CRANSTON 000397019 AM THE AUTHOR OF THE CODE YOU SEE BELOW. BESIDES THE FACT THAT NICK TOMKIN CREATED THE DESIGN LAYOUT. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 3: Responsive Design</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/style-bootstrap.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+
+        <div class="container-fluid p-0 m-0">
+            <nav class="navbar navbar-light navbar-expand-md" style='background-image: linear-gradient(179deg, #05D3FD 0%, #02A8F9 100%);'>
+                <a class="navbar-brand" href='./index-bootstrap.html'><img src="./images/openhouse-logo.svg" width="140" height="auto" alt="OpenHouse logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active font-weight-bold"><a class="nav-link text-light" href="./page-bootstrap.html">About</a></li>
+                        <li class="nav-item active font-weight-bold"><a class="nav-link text-light" href="./page-bootstrap.html">Team</a></li>
+                        <li class="nav-item active font-weight-bold"><a class="nav-link text-light" href="./post-bootstrap.html">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class='container-fluid d-flex align-items-center' style='background-image:url(./images/hero-image.jpg); background-repeat: no-repeat; background-size: cover; background-position-x: center; background-position-y: center; height:740px'>
+                <div class='row flex-fill'>
+                    <div class='col-xl-5 col-lg-6 col-md-8 ml-4 col-sm-12' style='background: rgba(0, 0, 0, 0.4); height: 290px; padding: 40px; border-radius: 10px; color:white;'>
+                        <h1 class='mb-4 display-4'>The best place to find a home.</h1>
+                        <button class="btn btn-primary btn-lg" >Get started</button>
+                    </div>
+                </div>           
+            </div>
+            <div class="container-fluid justify-content-center mt-5">
+                <div class='container'>
+                    <div class="embed-responsive embed-responsive-16by9 mb-5">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YLtFGWVWiGo?autoplay=1&rel=0&hl=en_US&fs=1" allowfullscreen></iframe>
+                    </div>
+                    <h1 class="header-mobile">For over such and such years, we’ve been the one that had the results you can count on.</h1>
+                    <div class="intro">
+                        <div class="photo">
+                            <img class="photo-desktop rellax" alt="Super cool photo" data-rellax-speed="2" src="images/intro-image.jpg" width="100%" height="auto">
+                            <img class="photo-mobile" alt="Super cool photo" src="images/intro-image.jpg" width="100%" height="auto">
+                        </div>
+                        <div class="text">
+                            <h1 class="header-desktop">For over such and such years, we’ve been the one that had the results you can count on.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet dui ac ex pulvinar fermentum eu auctor ex. Vestibulum at euismod dui. Etiam quis nisi quis est sagittis sollicitudin id in ipsum. Nulla euismod quis ex in egestas. Sed pulvinar cursus metus, in ultricies eros venenatis in. Vestibulum ut quam pulvinar sapien ornare pellentesque. Sed sed sagittis nunc, eget efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce euismod vitae tortor quis facilisis. Aenean vel fringilla massa. Cras faucibus lectus id semper scelerisque.</p>
+                            <p>Integer quis elementum libero, sed egestas dui. Phasellus quis mauris dignissim, rhoncus nulla eu, malesuada dui. Praesent eu nulla fermentum, imperdiet turpis sit amet, aliquet enim. Mauris gravida justo quis sem tincidunt, id auctor libero lacinia. </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class='text-center mb-3'>Features that keep you coming back</h1>
+                <div class="row my-4 d-flex justify-content-center p-5">          
+                    <div class="col-md-8 col-lg-3">
+                        <div class="d-flex justify-content-center p-5" style='border-radius: 10px; border:1px solid lightgray'>
+                            <img src="images/feature-1.png" alt="Feature 1" style='max-width: 146px; max-height: 146px;'>
+                        </div>
+                        <div class="text-center text-secondary font-weight-bold my-sm-3">
+                            Objectively, the best map application for finding your perfect home
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-3 mb-md-4">
+                        <div class="d-flex justify-content-center p-5" style='border-radius: 10px; border:1px solid lightgray'>
+                            <img src="images/feature-2.png" alt="Feature 2" style='max-width: 146px; max-height: 146px;'>
+                        </div>
+                        <div class="text-center text-secondary font-weight-bold my-sm-3">
+                            Works on mobile
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-3 mb-md-4">
+                        <div class="d-flex justify-content-center p-5" style='border-radius: 10px; border:1px solid lightgray'>
+                            <img src="images/feature-3.png" alt="Feature 3" style='max-width: 146px; max-height: 146px;'>
+                        </div>
+                        <div class="text-center text-secondary font-weight-bold my-sm-3">
+                            Fast like Sonic
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h1 class='my-5'>Now that we’ve clearly convinced you about what we’re doing here, please sign up.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet dui ac ex pulvinar fermentum eu auctor ex. Vestibulum at euismod dui. Etiam quis nisi quis est sagittis sollicitudin id in ipsum. Nulla euismod quis ex in egestas. Sed pulvinar cursus metus, in ultricies eros venenatis in. Vestibulum ut quam pulvinar sapien ornare pellentesque. Sed sed sagittis nunc, eget efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce euismod vitae tortor quis facilisis. Aenean vel fringilla massa. Cras faucibus lectus id semper scelerisque.</p>
+                    <p>Integer quis elementum libero, sed egestas dui. Phasellus quis mauris dignissim, rhoncus nulla eu, malesuada dui. Praesent eu nulla fermentum, imperdiet turpis sit amet, aliquet enim. Mauris gravida justo quis sem tincidunt, id auctor libero lacinia. </p>
+
+                    <form class="p-5 my-4">
+                        <div class="row">
+                            <div class='col-lg-6 col-md-12'>
+                                <div class='form-group'>
+                                    <label>Email Address</label>
+                                    <input class='form-control' type="email" name="user-email" id="user-email" placeholder="e.g. jesse@company.com">
+                                </div>                 
+                            </div>
+                            
+                            <div class='col-lg-6 col-md-12'>
+                                <div class='form-group'>
+                                    <label>Name</label>
+                                    <input class='form-control' type="text" name="user-name" id="user-name" placeholder="e.g. Jesse">
+                                </div>                 
+                            </div>                    
+                        </div>
+                        <div class="row">
+                            <div class='col-lg-6 col-md-12'>
+                                <div class='form-group'>
+                                    <label>Username</label>
+                                    <input class='form-control' type="text" name="user-username" id="user-username" placeholder="e.g. jesse">
+                                </div>                 
+                            </div>
+                            <div class='col-lg-6 col-md-12'>
+                                <div class='form-group'>
+                                    <label>Password</label>
+                                    <input class='form-control' type="password" name="user-password" id="user-password">
+                                </div>                 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-lg-3 col-md-12'>
+                                <button class='btn btn-primary w-100' type="button">Signup</button>
+                            </div>
+                            <div class='col-lg-6 offset-lg-3 col-md-12'>
+                                <input class="form-check-input" type="checkbox" name="user-accept" id="user-accept" checked> 
+                                <label class="form-check-label" for="user-accept">I agree that I want you to bother me with this forever, even when it’s clearly no longer relevant (please check it anyway, yolo)</label>
+                            </div>
+                        </div>               
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <div class='container-fluid'>
+                    <div class="row">
+                        <div class='col-lg-2 col-md-12 mb-4'>
+                            <a href='./index-bootstrap.html'><img class='mb-2' src="images/openhouse-logo.svg" width="140" height="auto" alt="OpenHouse logo"></a>
+                            <div>123 Main Street,<br>Hamilton, Ontario<br>L9A 2W6</div>
+                        </div>
+                        <div class='col-10'>
+                            <nav>
+                                <a class='d-block text-light mb-2' href='./page-bootstrap.html'>About</a>
+                                <a class='d-block text-light mb-2' href="./page-bootstrap.html">Team</a>
+                                <a class='d-block text-light mb-3' href="./post-bootstrap.html">Blog</a>
+                            </nav>
+                            <div>
+                                <a href="#"><img src="images/instagram.svg" width="24" height="auto" alt="Instagram icon"></a>
+                                <a href="#"><img src="images/facebook.svg" width="24" height="auto" alt="Facebook icon"></a>
+                                <a href="#"><img src="images/twitter.svg" width="24" height="auto" alt="Twitter icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </footer>
+        </div>
+
+    </body>
+</html>
